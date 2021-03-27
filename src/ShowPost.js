@@ -46,7 +46,7 @@ const ShowPost = (props) => {
             <h2> Comments </h2>
             <ul>
                 {
-                    comments.map(comment => {
+                    comments.map((comment, i) => {
                         return (
                             <li key={comment.id} > {comment.body} </li>
                         )
